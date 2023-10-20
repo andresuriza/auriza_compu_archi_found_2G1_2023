@@ -1,0 +1,9 @@
+|Test
+a => l1.DATAIN
+b => l2.DATAIN
+c => l3.DATAIN
+l1 << a.DB_MAX_OUTPUT_PORT_TYPE
+l2 << b.DB_MAX_OUTPUT_PORT_TYPE
+l3 << c.DB_MAX_OUTPUT_PORT_TYPE
+
+
