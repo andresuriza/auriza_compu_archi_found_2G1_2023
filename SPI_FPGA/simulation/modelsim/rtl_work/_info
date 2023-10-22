@@ -1,0 +1,116 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/simulation/modelsim
+vflipflop
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1698013050
+!i10b 1
+!s100 F7<hLLA`X;=>=@O[_`X9L1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I43l1?:ee=7L8h7TEF<8f>3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1697946537
+8C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/flipflop.sv
+FC:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/flipflop.sv
+!i122 1
+L0 1 9
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1698013050.000000
+!s107 C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/flipflop.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files|C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/flipflop.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files
+Z9 tCvgOpt 0
+vrecievesend
+R1
+R2
+!i10b 1
+!s100 ebE3eDc<lm948oL^A=n7V0
+R3
+I5L1;D71L?5YGeNNj^7=VB3
+R4
+S1
+R0
+w1698012778
+8C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv
+FC:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv
+!i122 2
+L0 1 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files|C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv|
+!i113 1
+R7
+R8
+R9
+vrecievesend_tb
+R1
+!s110 1698013051
+!i10b 1
+!s100 jPWA=;z`NZFDNJ^GCIiSO2
+R3
+IzZDGIAKXPJf<K<_k@L[EX0
+R4
+S1
+R0
+w1698012965
+8C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend_tb.sv
+FC:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend_tb.sv
+!i122 3
+L0 1 37
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files|C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend_tb.sv|
+!i113 1
+R7
+R8
+R9
+vSPregister
+R1
+R2
+!i10b 1
+!s100 `PbWBh0KTojnZ;:32W>Z01
+R3
+IB6d5?>jAWAU[gC@SI0Wbk0
+R4
+S1
+R0
+w1698012529
+8C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv
+FC:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv
+!i122 0
+L0 1 23
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files|C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv|
+!i113 1
+R7
+R8
+R9
+n@s@pregister
