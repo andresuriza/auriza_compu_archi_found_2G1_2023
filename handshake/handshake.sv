@@ -1,4 +1,4 @@
-module race_official
+module handshake
 (
    input      clk,
    input      rst_l,    
