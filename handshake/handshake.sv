@@ -1,4 +1,4 @@
-module handshake
+module race_official
 (
    input      clk,
    input      rst_l,    
@@ -9,29 +9,31 @@ module handshake
 
    reg [1:0] state;
    wire state0, state1, state2;
+   wire reset_trigger;
 
    // Lógica para determinar si estamos en el estado 0
-   assign state0 = (state == 0);
+   assign state0 = (state == 2'b00);
 
    // Lógica para determinar si estamos en el estado 1
-   assign state1 = (state == 1);
+   assign state1 = (state == 2'b01);
 
    // Lógica para determinar si estamos en el estado 2
-   assign state2 = (state == 2);
+   assign state2 = (state == 2'b10);
 
-   always @(posedge clk or negedge rst_l) begin
-      if (!rst_l) begin
+   // Lógica combinacional para determinar si el reinicio debe ocurrir
+   assign reset_trigger = (!rst_l) | (state2 & !done & !ready);
+
+   always @(posedge clk) begin
+      // Lógica para el estado siguiente
+      state <= (state1 & done) | (state2 & !(ready & state1 & done));
+
+      // Lógica para la señal de inicio
+      start <= state0 & ready;
+
+      // Lógica para el reinicio basado en la lógica combinacional
+      if (reset_trigger) begin
          state <= 2'b00;
          start <= 1'b0;
-      end
-      else begin
-         // Lógica combinacional para la máquina de estados
-         state <= (state2 & !(done & state1 & state2)) |
-                   (state1 & (done & !state2)) |
-                   (state0 & (ready & !state1));
-         
-         // Lógica para la señal de inicio
-         start <= (state0 & (ready & !state1));
       end
    end
 endmodule
