@@ -1,11 +1,12 @@
 |recievesend
-MOSI => MOSI.IN2
+MOSI => mosi.IN0
 clk => clk.IN2
-MISO <= flipflop:ff.port2
-lds[0] <= SPregister:regist.port2
-lds[1] <= SPregister:regist.port2
-lds[2] <= SPregister:regist.port2
-lds[3] <= SPregister:regist.port2
+cs => mosi.IN1
+MISO << flipflop:ff.port2
+lds[0] << SPregister:regist.port2
+lds[1] << SPregister:regist.port2
+lds[2] << SPregister:regist.port2
+lds[3] << SPregister:regist.port2
 
 
 |recievesend|SPregister:regist

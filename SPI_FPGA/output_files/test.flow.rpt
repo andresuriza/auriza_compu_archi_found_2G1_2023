@@ -1,5 +1,5 @@
 Flow report for test
-Sun Oct 22 16:17:04 2023
+Sun Oct 22 20:05:17 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-----------------------------+------------------------------------------------+
-; Flow Status                 ; Successful - Sun Oct 22 16:17:04 2023          ;
+; Flow Status                 ; Successful - Sun Oct 22 20:05:17 2023          ;
 ; Quartus Prime Version       ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name               ; test                                           ;
 ; Top-level Entity Name       ; recievesend                                    ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/22/2023 16:16:54 ;
+; Start date & time ; 10/22/2023 20:05:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; test                ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 192231541929579.169801301415236        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 192231541929579.169802670815328        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; PSregister_tb  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; SPregister_tb  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; recievesend_tb ;
