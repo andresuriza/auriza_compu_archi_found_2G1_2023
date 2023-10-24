@@ -2,8 +2,8 @@ module handshake_tb();
    reg clk;         
    reg rst_l;       
    reg ready;       
-   reg done;        // Señal de done
-   wire start;      // Señal de start generada por el módulo handshake
+   reg done;        
+   wire start;      
 
 
    handshake hsk(
