@@ -8,56 +8,56 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/simulation/modelsim
+Z0 dC:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/simulation/modelsim
 vhandshake
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1698111206
+Z2 !s110 1698117926
 !i10b 1
 !s100 PUTe57MjFbg6>dDRNAgP=1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I_KJmC5^dKcY3Ik@RPPg:g1
+IzIQnLICOIbN[=W6;GCaYN0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1698110704
-8C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv
-FC:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv
+w1698116658
+8C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv
+FC:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv
 !i122 0
 L0 1 39
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1698111205.000000
-!s107 C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/handshake|C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv|
+Z6 !s108 1698117926.000000
+!s107 C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/handshake|C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv|
 !i113 1
-Z6 o-sv -work work
-!s92 -sv -work work +incdir+C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/handshake
-Z7 tCvgOpt 0
+Z7 o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/handshake
+Z8 tCvgOpt 0
 vhandshake_tb
 R1
 R2
 !i10b 1
-!s100 HSDWWRT8U_GlU8=Sf5ifG3
+!s100 O_;?zkk9^oGPH=7`_9e0z2
 R3
-I;ec@dz1E5;>D^FeM_T:4J3
+I9zoGl=PfI=Lb3>>D@M`dE0
 R4
 S1
 R0
-w1698111143
-8C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv
-FC:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv
+w1698117847
+8C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv
+FC:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv
 !i122 1
-L0 1 55
+L0 1 66
 R5
 r1
 !s85 0
 31
-!s108 1698111206.000000
-!s107 C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files|C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv|
-!i113 1
 R6
-!s92 -sv -work work +incdir+C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files
+!s107 C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files|C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv|
+!i113 1
 R7
+!s92 -sv -work work +incdir+C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files
+R8

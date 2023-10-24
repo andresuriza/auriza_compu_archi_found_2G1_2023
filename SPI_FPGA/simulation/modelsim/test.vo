@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition"
 
-// DATE "10/23/2023 19:16:56"
+// DATE "10/23/2023 19:57:49"
 
 // 
 // Device: Altera 5CSEBA6U23I7 Package UFBGA672
@@ -121,7 +121,7 @@ defparam \ready~input .simulate_z_as = "z";
 // Location: LABCELL_X50_Y1_N3
 cyclonev_lcell_comb \start~0 (
 // Equation(s):
-// \start~0_combout  = ( \ready~input_o  & ( \rst_l~input_o  ) )
+// \start~0_combout  = ( \ready~input_o  ) # ( !\ready~input_o  & ( !\rst_l~input_o  ) )
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -138,7 +138,7 @@ cyclonev_lcell_comb \start~0 (
 	.shareout());
 // synopsys translate_off
 defparam \start~0 .extended_lut = "off";
-defparam \start~0 .lut_mask = 64'h00000F0F00000F0F;
+defparam \start~0 .lut_mask = 64'hF0F0FFFFF0F0FFFF;
 defparam \start~0 .shared_arith = "off";
 // synopsys translate_on
 
