@@ -10,6 +10,7 @@ source_file = 1, C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_fo
 source_file = 1, C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv
 source_file = 1, C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend_tb.sv
 source_file = 1, C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv
+source_file = 1, C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/.gitignore
 source_file = 1, C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/db/test.cbx.xml
 design_name = handshake
 instance = comp, \start~output , start~output, handshake, 1

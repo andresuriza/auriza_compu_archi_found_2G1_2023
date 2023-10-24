@@ -841,3 +841,5 @@
 #    Time: 90 ps  Iteration: 0  Instance: /handshake_tb
 # 1
 # Break in Module handshake_tb at C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv line 62
+# End time: 20:39:14 on Oct 23,2023, Elapsed time: 0:13:48
+# Errors: 0, Warnings: 0

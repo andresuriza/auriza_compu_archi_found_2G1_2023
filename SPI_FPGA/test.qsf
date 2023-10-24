@@ -92,4 +92,5 @@ set_global_assignment -name EDA_TEST_BENCH_NAME handshake_tb -section_id eda_sim
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id handshake_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME handshake_tb -section_id handshake_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE Verilog_files/handshake_tb.sv -section_id handshake_tb
+set_global_assignment -name SOURCE_FILE .gitignore
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
