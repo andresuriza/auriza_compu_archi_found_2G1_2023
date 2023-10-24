@@ -1,5 +1,5 @@
 Analysis & Elaboration report for test
-Sun Oct 22 16:17:04 2023
+Mon Oct 23 19:32:59 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -11,6 +11,7 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
   5. Analysis & Elaboration Messages
+  6. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -37,10 +38,10 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Oct 22 16:17:04 2023          ;
+; Analysis & Elaboration Status ; Successful - Mon Oct 23 19:32:59 2023          ;
 ; Quartus Prime Version         ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                 ; test                                           ;
-; Top-level Entity Name         ; recievesend                                    ;
+; Top-level Entity Name         ; handshake                                      ;
 ; Family                        ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
 ; Total registers               ; N/A until Partition Merge                      ;
@@ -74,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEBA6U23I7       ;                    ;
-; Top-level entity name                                                           ; recievesend        ; test               ;
+; Top-level entity name                                                           ; handshake          ; test               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -161,20 +162,18 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Sun Oct 22 16:16:54 2023
+    Info: Processing started: Mon Oct 23 19:32:50 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/aleji/desktop/proyarqui/auriza_compu_archi_found_2g1_2023/handshake/handshake.sv
+    Info (12023): Found entity 1: handshake File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/test.sv
     Info (12023): Found entity 1: Test File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/Test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/spregister_tb.sv
     Info (12023): Found entity 1: SPregister_tb File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/spregister.sv
     Info (12023): Found entity 1: SPregister File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/psregister_tb.sv
-    Info (12023): Found entity 1: PSregister_tb File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/PSregister_tb.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/psregister.sv
-    Info (12023): Found entity 1: PSregister File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/PSregister.sv Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file verilog_files/proyectogrupal_tb.v
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/proyectogrupal.sv
     Info (12023): Found entity 1: proyectoGrupal File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/proyectoGrupal.sv Line: 1
@@ -186,13 +185,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file verilog
     Info (12023): Found entity 1: recievesend File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/recievesend_tb.sv
     Info (12023): Found entity 1: recievesend_tb File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend_tb.sv Line: 1
-Info (12127): Elaborating entity "recievesend" for the top level hierarchy
-Info (12128): Elaborating entity "SPregister" for hierarchy "SPregister:regist" File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 7
-Info (12128): Elaborating entity "flipflop" for hierarchy "SPregister:regist|flipflop:ff1" File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/handshake_tb.sv
+    Info (12023): Found entity 1: handshake_tb File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv Line: 1
+Info (12127): Elaborating entity "handshake" for the top level hierarchy
+Info (144001): Generated suppressed messages file C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Sun Oct 22 16:17:04 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Mon Oct 23 19:32:59 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:17
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.map.smsg.
 
 
