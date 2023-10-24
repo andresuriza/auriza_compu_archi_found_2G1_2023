@@ -1,50 +1,14 @@
-|recievesend
-MOSI => mosi.IN0
-clk => clk.IN2
-cs => mosi.IN1
-MISO << flipflop:ff.port2
-lds[0] << SPregister:regist.port2
-lds[1] << SPregister:regist.port2
-lds[2] << SPregister:regist.port2
-lds[3] << SPregister:regist.port2
-
-
-|recievesend|SPregister:regist
-MOSI => MOSI.IN1
-clk => clk.IN4
-leds[0] <= Q1.DB_MAX_OUTPUT_PORT_TYPE
-leds[1] <= Q2.DB_MAX_OUTPUT_PORT_TYPE
-leds[2] <= Q3.DB_MAX_OUTPUT_PORT_TYPE
-leds[3] <= flipflop:ff4.port2
-
-
-|recievesend|SPregister:regist|flipflop:ff1
-D => Q~reg0.DATAIN
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|recievesend|SPregister:regist|flipflop:ff2
-D => Q~reg0.DATAIN
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|recievesend|SPregister:regist|flipflop:ff3
-D => Q~reg0.DATAIN
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|recievesend|SPregister:regist|flipflop:ff4
-D => Q~reg0.DATAIN
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|recievesend|flipflop:ff
-D => Q~reg0.DATAIN
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|handshake
+clk => start~reg0.CLK
+clk => state[0].CLK
+clk => state[1].CLK
+rst_l => reset_trigger.IN1
+ready => state.IN1
+ready => start.IN1
+ready => reset_trigger.IN1
+done => state.IN1
+done => state.IN1
+done => reset_trigger.IN1
+start << start~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
