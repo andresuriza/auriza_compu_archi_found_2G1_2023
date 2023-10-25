@@ -22,28 +22,21 @@ void setup() {
   Serial.begin(9600);
   
   digitalWrite(chipSel, LOW);
-  handshake();
+  start_handshake();
   digitalWrite(chipSel, HIGH);
 }
 
-void handshake() {
-  digitalWrite(reset, HIGH);
-  digitalWrite(ready, LOW);
-  digitalWrite(done, LOW);
-  delay(100);
-
-  digitalWrite(reset, LOW);
-  digitalWrite(ready, HIGH);
-  digitalWrite(done, LOW); 
-  delay(100);
-
-  if (digitalRead(start) == 1) {
+void send(int n) {
     Serial.println("Handshake recibido");
-    byte b = SPI.transfer(4);  //TODO if == mensaje enviado, recibido
+    byte b = SPI.transfer(n);  //TODO if == mensaje enviado, recibido
     delayMicroseconds(200);
     Serial.println("LEIDO: ");
     Serial.println(b, BIN);
-    
+
+    end_handshake();
+}
+
+void end_handshake() {
     digitalWrite(chipSel, HIGH);
     delay(100); 
   
@@ -60,10 +53,26 @@ void handshake() {
     digitalWrite(ready, LOW);
     digitalWrite(done, LOW);
     delay(100);
+}
+
+void start_handshake() {
+  digitalWrite(reset, HIGH);
+  digitalWrite(ready, LOW);
+  digitalWrite(done, LOW);
+  delay(100);
+
+  digitalWrite(reset, LOW);
+  digitalWrite(ready, HIGH);
+  digitalWrite(done, LOW); 
+  delay(100);
+
+  if (digitalRead(start) == 1) {
+    send(4);
+    
   } else {
     Serial.println("Fallido");
     delay(3000);
-    handshake();
+    start_handshake();
   }
 }
     
