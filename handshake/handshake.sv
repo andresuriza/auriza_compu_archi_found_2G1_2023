@@ -31,9 +31,8 @@ module handshake
       start <= state0 & ready;
 
       // Lógica para el reinicio basado en la lógica combinacional
-      if (reset_trigger) begin
-         state <= 2'b00;
-         start <= 1'b0;
-      end
+		// Utilizando un mux para asignar valores a 'state' y 'start'
+		{state, start} <= reset_trigger ? {2'b00, 1'b0} : {state, start};
+
    end
 endmodule
