@@ -1,6 +1,6 @@
 Analysis & Synthesis report for test
-Tue Oct 24 00:24:05 2023
-Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Mon Oct 23 20:46:46 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
 ---------------------
@@ -45,14 +45,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 24 00:24:05 2023          ;
-; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 23 20:46:46 2023          ;
+; Quartus Prime Version           ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                   ; test                                           ;
-; Top-level Entity Name           ; recievesend                                    ;
+; Top-level Entity Name           ; handshake                                      ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 6                                              ;
-; Total pins                      ; 12                                             ;
+; Total registers                 ; 1                                              ;
+; Total pins                      ; 5                                              ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEBA6U23I7       ;                    ;
-; Top-level entity name                                                           ; recievesend        ; test               ;
+; Top-level entity name                                                           ; handshake          ; test               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -158,70 +158,59 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../handshake/handshake.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv                ;         ;
-; Verilog_files/SPregister.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv  ;         ;
-; Verilog_files/flipflop.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/flipflop.sv    ;         ;
-; Verilog_files/recievesend.sv     ; yes             ; User SystemVerilog HDL File  ; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                       ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
+; ../handshake/handshake.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 3         ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 2         ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 0         ;
-;     -- 5 input functions                    ; 0         ;
-;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 2         ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 6         ;
-;                                             ;           ;
-; I/O pins                                    ; 12        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 6         ;
-; Total fan-out                               ; 34        ;
-; Average fan-out                             ; 1.06      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 1          ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 1          ;
+;     -- 7 input functions                    ; 0          ;
+;     -- 6 input functions                    ; 0          ;
+;     -- 5 input functions                    ; 0          ;
+;     -- 4 input functions                    ; 0          ;
+;     -- <=3 input functions                  ; 1          ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 1          ;
+;                                             ;            ;
+; I/O pins                                    ; 5          ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; start~reg0 ;
+; Maximum fan-out                             ; 1          ;
+; Total fan-out                               ; 10         ;
+; Average fan-out                             ; 0.83       ;
++---------------------------------------------+------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                            ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+-------------+--------------+
-; |recievesend               ; 2 (1)               ; 6 (0)                     ; 0                 ; 0          ; 12   ; 0            ; |recievesend                                ; recievesend ; work         ;
-;    |SPregister:regist|     ; 0 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|SPregister:regist              ; SPregister  ; work         ;
-;       |flipflop:ff1|       ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|SPregister:regist|flipflop:ff1 ; flipflop    ; work         ;
-;       |flipflop:ff2|       ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|SPregister:regist|flipflop:ff2 ; flipflop    ; work         ;
-;       |flipflop:ff3|       ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|SPregister:regist|flipflop:ff3 ; flipflop    ; work         ;
-;       |flipflop:ff4|       ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|SPregister:regist|flipflop:ff4 ; flipflop    ; work         ;
-;    |flipflop:ff|           ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|flipflop:ff                    ; flipflop    ; work         ;
-;    |handshake:hk|          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|handshake:hk                   ; handshake   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |handshake                 ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 5    ; 0            ; |handshake          ; handshake   ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -230,7 +219,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+----------------------------------------+
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
-; handshake:hk|state[0,1]               ; Stuck at GND due to stuck port data_in ;
+; state[0,1]                            ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 2 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
@@ -240,7 +229,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 6     ;
+; Total registers                              ; 1     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -255,15 +244,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 6                           ;
-;     plain             ; 6                           ;
-; arriav_lcell_comb     ; 2                           ;
-;     normal            ; 2                           ;
-;         2 data inputs ; 2                           ;
-; boundary_port         ; 12                          ;
+; arriav_ff             ; 1                           ;
+;     plain             ; 1                           ;
+; arriav_lcell_comb     ; 1                           ;
+;     normal            ; 1                           ;
+;         2 data inputs ; 1                           ;
+; boundary_port         ; 5                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.46                        ;
+; Average LUT depth     ; 0.60                        ;
 +-----------------------+-----------------------------+
 
 
@@ -281,56 +270,53 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Tue Oct 24 00:23:54 2023
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Mon Oct 23 20:46:35 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/andres/documents/tec/fundamentos de arquitectura/proyecto 2/auriza_compu_archi_found_2g1_2023/handshake/handshake.sv
-    Info (12023): Found entity 1: handshake File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv Line: 1
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/steph/onedrive/documentos/github/auriza_compu_archi_found_2g1_2023/handshake/handshake.sv
+    Info (12023): Found entity 1: handshake File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/test.sv
-    Info (12023): Found entity 1: Test File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/Test.sv Line: 1
+    Info (12023): Found entity 1: Test File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/Test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/spregister_tb.sv
-    Info (12023): Found entity 1: SPregister_tb File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister_tb.sv Line: 1
+    Info (12023): Found entity 1: SPregister_tb File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/spregister.sv
-    Info (12023): Found entity 1: SPregister File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv Line: 1
+    Info (12023): Found entity 1: SPregister File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file verilog_files/proyectogrupal_tb.v
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/proyectogrupal.sv
-    Info (12023): Found entity 1: proyectoGrupal File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/proyectoGrupal.sv Line: 1
+    Info (12023): Found entity 1: proyectoGrupal File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/proyectoGrupal.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/flipflop_tb.sv
-    Info (12023): Found entity 1: flipflop_tb File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/flipflop_tb.sv Line: 1
+    Info (12023): Found entity 1: flipflop_tb File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/flipflop_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/flipflop.sv
-    Info (12023): Found entity 1: flipflop File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/flipflop.sv Line: 1
+    Info (12023): Found entity 1: flipflop File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/flipflop.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/recievesend.sv
-    Info (12023): Found entity 1: recievesend File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 1
+    Info (12023): Found entity 1: recievesend File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/recievesend_tb.sv
-    Info (12023): Found entity 1: recievesend_tb File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend_tb.sv Line: 1
+    Info (12023): Found entity 1: recievesend_tb File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/handshake_tb.sv
-    Info (12023): Found entity 1: handshake_tb File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv Line: 1
-Info (12127): Elaborating entity "recievesend" for the top level hierarchy
-Info (12128): Elaborating entity "handshake" for hierarchy "handshake:hk" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 9
-Info (12128): Elaborating entity "SPregister" for hierarchy "SPregister:regist" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 10
-Info (12128): Elaborating entity "flipflop" for hierarchy "SPregister:regist|flipflop:ff1" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv Line: 6
+    Info (12023): Found entity 1: handshake_tb File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv Line: 1
+Info (12127): Elaborating entity "handshake" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "done" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 1
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 7 logic cells
+    Warning (15610): No output dependent on input pin "done" File: C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv Line: 6
+Info (21057): Implemented 6 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4841 megabytes
-    Info: Processing ended: Tue Oct 24 00:24:05 2023
+    Info: Peak virtual memory: 4854 megabytes
+    Info: Processing ended: Mon Oct 23 20:46:46 2023
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Total CPU time (on all processors): 00:00:26
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.map.smsg.
+The suppressed messages can be found in C:/Users/steph/OneDrive/Documentos/GitHub/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.map.smsg.
 
 
