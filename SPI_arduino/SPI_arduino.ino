@@ -21,7 +21,7 @@ void setup() {
   SPI.begin();
   Serial.begin(9600);
   
-  digitalWrite(chipSel, LOW);
+  digitalWrite(chipSel, LOW);  
   start_handshake();
   digitalWrite(chipSel, HIGH);
 }
