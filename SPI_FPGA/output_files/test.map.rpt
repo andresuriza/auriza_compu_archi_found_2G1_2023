@@ -1,5 +1,5 @@
 Analysis & Elaboration report for test
-Sun Oct 29 14:09:29 2023
+Mon Oct 30 22:33:07 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -11,6 +11,7 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
   5. Analysis & Elaboration Messages
+  6. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -37,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Oct 29 14:09:29 2023          ;
+; Analysis & Elaboration Status ; Successful - Mon Oct 30 22:33:07 2023          ;
 ; Quartus Prime Version         ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                 ; test                                           ;
 ; Top-level Entity Name         ; pwm                                            ;
@@ -161,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Sun Oct 29 14:09:19 2023
+    Info: Processing started: Mon Oct 30 22:32:53 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -191,11 +192,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file verilog
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/handshake_tb.sv
     Info (12023): Found entity 1: handshake_tb File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv Line: 1
 Info (12127): Elaborating entity "pwm" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at pwm.sv(9): truncated value with size 32 to match size of target (4) File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/pwm.sv Line: 9
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
+Warning (10230): Verilog HDL assignment warning at pwm.sv(10): truncated value with size 32 to match size of target (8) File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/pwm.sv Line: 10
+Warning (10230): Verilog HDL assignment warning at pwm.sv(14): truncated value with size 32 to match size of target (8) File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/pwm.sv Line: 14
+Warning (10230): Verilog HDL assignment warning at pwm.sv(16): truncated value with size 32 to match size of target (1) File: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/pwm.sv Line: 16
+Info (144001): Generated suppressed messages file C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Sun Oct 29 14:09:29 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Processing ended: Mon Oct 30 22:33:07 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.map.smsg.
 
 
