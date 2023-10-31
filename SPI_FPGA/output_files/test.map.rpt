@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Tue Oct 31 05:01:44 2023
+Tue Oct 31 05:35:16 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -47,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 31 05:01:44 2023          ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 31 05:35:16 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; test                                           ;
 ; Top-level Entity Name           ; recievesend                                    ;
@@ -162,12 +162,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.3%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -176,8 +176,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                 ; Library ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; output_files/handshake.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/handshake.sv    ;         ;
 ; Verilog_files/pwm.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/pwm.sv         ;         ;
-; ../handshake/handshake.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv                ;         ;
 ; Verilog_files/SPregister.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv  ;         ;
 ; Verilog_files/flipflop.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/flipflop.sv    ;         ;
 ; Verilog_files/recievesend.sv     ; yes             ; User SystemVerilog HDL File  ; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv ;         ;
@@ -189,14 +189,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 12    ;
+; Estimate of Logic utilization (ALMs needed) ; 11    ;
 ;                                             ;       ;
-; Combinational ALUT usage for logic          ; 19    ;
+; Combinational ALUT usage for logic          ; 18    ;
 ;     -- 7 input functions                    ; 0     ;
 ;     -- 6 input functions                    ; 3     ;
 ;     -- 5 input functions                    ; 1     ;
 ;     -- 4 input functions                    ; 3     ;
-;     -- <=3 input functions                  ; 12    ;
+;     -- <=3 input functions                  ; 11    ;
 ;                                             ;       ;
 ; Dedicated logic registers                   ; 14    ;
 ;                                             ;       ;
@@ -206,7 +206,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;       ;
 ; Maximum fan-out node                        ; _~1   ;
 ; Maximum fan-out                             ; 9     ;
-; Total fan-out                               ; 114   ;
+; Total fan-out                               ; 112   ;
 ; Average fan-out                             ; 1.93  ;
 +---------------------------------------------+-------+
 
@@ -216,14 +216,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+-------------+--------------+
-; |recievesend               ; 19 (2)              ; 14 (0)                    ; 0                 ; 0          ; 13   ; 0            ; |recievesend                                ; recievesend ; work         ;
+; |recievesend               ; 18 (2)              ; 14 (0)                    ; 0                 ; 0          ; 13   ; 0            ; |recievesend                                ; recievesend ; work         ;
 ;    |SPregister:regist|     ; 0 (0)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|SPregister:regist              ; SPregister  ; work         ;
 ;       |flipflop:ff1|       ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|SPregister:regist|flipflop:ff1 ; flipflop    ; work         ;
 ;       |flipflop:ff2|       ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|SPregister:regist|flipflop:ff2 ; flipflop    ; work         ;
 ;       |flipflop:ff3|       ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|SPregister:regist|flipflop:ff3 ; flipflop    ; work         ;
 ;       |flipflop:ff4|       ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|SPregister:regist|flipflop:ff4 ; flipflop    ; work         ;
 ;    |flipflop:ff|           ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|flipflop:ff                    ; flipflop    ; work         ;
-;    |handshake:hs|          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|handshake:hs                   ; handshake   ; work         ;
+;    |handshake:hs|          ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|handshake:hs                   ; handshake   ; work         ;
 ;    |pwm:p|                 ; 16 (16)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |recievesend|pwm:p                          ; pwm         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -283,12 +283,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; arriav_ff             ; 14                          ;
 ;     SCLR              ; 8                           ;
 ;     plain             ; 6                           ;
-; arriav_lcell_comb     ; 19                          ;
+; arriav_lcell_comb     ; 18                          ;
 ;     arith             ; 8                           ;
 ;         1 data inputs ; 8                           ;
-;     normal            ; 11                          ;
+;     normal            ; 10                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
+;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 3                           ;
 ;         5 data inputs ; 1                           ;
@@ -296,7 +296,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; boundary_port         ; 13                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.75                        ;
+; Average LUT depth     ; 1.76                        ;
 +-----------------------+-----------------------------+
 
 
@@ -305,7 +305,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -315,16 +315,16 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Tue Oct 31 05:01:27 2023
+    Info: Processing started: Tue Oct 31 05:35:04 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/handshake.sv
+    Info (12023): Found entity 1: handshake File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/handshake.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/pwm_tb.sv
     Info (12023): Found entity 1: pwm_tb File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/pwm_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/pwm.sv
     Info (12023): Found entity 1: pwm File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/pwm.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/andres/documents/tec/fundamentos de arquitectura/proyecto 2/auriza_compu_archi_found_2g1_2023/handshake/handshake.sv
-    Info (12023): Found entity 1: handshake File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/handshake/handshake.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/test.sv
     Info (12023): Found entity 1: Test File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/Test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/spregister_tb.sv
@@ -342,8 +342,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file verilog
     Info (12023): Found entity 1: recievesend File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/recievesend_tb.sv
     Info (12023): Found entity 1: recievesend_tb File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend_tb.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/handshake_tb.sv
-    Info (12023): Found entity 1: handshake_tb File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/handshake_tb.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at SPregister.sv(24): created implicit net for "clk2" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv Line: 24
 Warning (10236): Verilog HDL Implicit Net warning at SPregister.sv(24): created implicit net for "lds" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv Line: 24
 Warning (10236): Verilog HDL Implicit Net warning at SPregister.sv(24): created implicit net for "speed" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv Line: 24
@@ -354,6 +352,7 @@ Warning (10230): Verilog HDL assignment warning at pwm.sv(10): truncated value w
 Warning (10230): Verilog HDL assignment warning at pwm.sv(14): truncated value with size 32 to match size of target (8) File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/pwm.sv Line: 14
 Warning (10230): Verilog HDL assignment warning at pwm.sv(16): truncated value with size 32 to match size of target (1) File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/pwm.sv Line: 16
 Info (12128): Elaborating entity "handshake" for hierarchy "handshake:hs" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 21
+Warning (10036): Verilog HDL or VHDL warning at handshake.sv(12): object "reset_trigger" assigned a value but never read File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/handshake.sv Line: 12
 Info (12128): Elaborating entity "SPregister" for hierarchy "SPregister:regist" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 22
 Info (12128): Elaborating entity "flipflop" for hierarchy "SPregister:regist|flipflop:ff1" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/SPregister.sv Line: 6
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
@@ -361,17 +360,18 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 1
     Warning (15610): No output dependent on input pin "dn" File: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/Verilog_files/recievesend.sv Line: 1
 Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 24 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
     Info: Peak virtual memory: 4841 megabytes
-    Info: Processing ended: Tue Oct 31 05:01:44 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Processing ended: Tue Oct 31 05:35:16 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:26
 
 
 +------------------------------------------+

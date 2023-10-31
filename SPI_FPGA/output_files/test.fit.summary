@@ -1,11 +1,11 @@
-Fitter Status : Successful - Tue Oct 31 05:02:49 2023
+Fitter Status : Successful - Tue Oct 31 05:35:54 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : test
 Top-level Entity Name : recievesend
 Family : Cyclone V
 Device : 5CSEBA6U23I7
 Timing Models : Final
-Logic utilization (in ALMs) : 12 / 41,910 ( < 1 % )
+Logic utilization (in ALMs) : 11 / 41,910 ( < 1 % )
 Total registers : 17
 Total pins : 13 / 314 ( 4 % )
 Total virtual pins : 0

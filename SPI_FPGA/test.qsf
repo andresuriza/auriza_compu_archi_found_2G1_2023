@@ -77,20 +77,6 @@ set_location_assignment PIN_AF17 -to lds[0]
 set_location_assignment PIN_AE15 -to lds[1]
 set_location_assignment PIN_AF15 -to lds[2]
 set_location_assignment PIN_AG16 -to lds[3]
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/pwm_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/pwm.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../handshake/handshake.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/Test.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/SPregister_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/SPregister.sv
-set_global_assignment -name VERILOG_FILE Verilog_files/proyectoGrupal_tb.v
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/proyectoGrupal.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/flipflop_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/flipflop.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/recievesend.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/recievesend_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/handshake_tb.sv
-set_global_assignment -name SOURCE_FILE .gitignore
 set_global_assignment -name EDA_TEST_BENCH_NAME pwm_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id pwm_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME pwm_tb -section_id pwm_tb
@@ -108,4 +94,17 @@ set_instance_assignment -name IO_STANDARD "2.5 V" -to lds[1]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to lds[0]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to lds
 set_location_assignment PIN_AH11 -to speed
+set_global_assignment -name SYSTEMVERILOG_FILE output_files/handshake.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/pwm_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/pwm.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/Test.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/SPregister_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/SPregister.sv
+set_global_assignment -name VERILOG_FILE Verilog_files/proyectoGrupal_tb.v
+set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/proyectoGrupal.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/flipflop_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/flipflop.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/recievesend.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Verilog_files/recievesend_tb.sv
+set_global_assignment -name SOURCE_FILE .gitignore
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

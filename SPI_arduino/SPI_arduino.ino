@@ -11,7 +11,7 @@ void setup() {
   pinMode(clockPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
   pinMode(miso, INPUT);
-
+  //SPI.begin();
   SPI.beginTransaction(SPISettings(1000, MSBFIRST, SPI_MODE0));
   
   
@@ -32,7 +32,6 @@ void setup() {
       else {
         Serial.println("Different");
       }
-
       delay(1000);
    }
 
