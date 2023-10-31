@@ -28,6 +28,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "speed",
+					"strict" : false
+				},
+				{
 					"name" : "MOSI",
 					"strict" : false
 				},

@@ -1,6 +1,6 @@
 Assembler report for test
-Thu Oct 26 16:51:31 2023
-Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Tue Oct 31 05:03:05 2023
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.sof
+  5. Assembler Device Options: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Oct 26 16:51:31 2023 ;
+; Assembler Status      ; Successful - Tue Oct 31 05:03:05 2023 ;
 ; Revision Name         ; test                                  ;
 ; Top-level Entity Name ; recievesend                           ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                         ;
-+---------------------------------------------------------------------------------------------------+
-; File Name                                                                                         ;
-+---------------------------------------------------------------------------------------------------+
-; C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.sof ;
-+---------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                             ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                             ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.sof ;
++---------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/aleji/Desktop/ProyArqui/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.sof ;
-+----------------+------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                    ;
-+----------------+------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00B02D31                                                                                                 ;
-; Checksum       ; 0x00B02D31                                                                                                 ;
-+----------------+------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/andres/Documents/TEC/Fundamentos de arquitectura/Proyecto 2/auriza_compu_archi_found_2G1_2023/SPI_FPGA/output_files/test.sof ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                        ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00B06875                                                                                                                                     ;
+; Checksum       ; 0x00B06875                                                                                                                                     ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,15 +77,15 @@ https://fpgasoftware.intel.com/eula.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Thu Oct 26 16:51:25 2023
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Tue Oct 31 05:02:55 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4883 megabytes
-    Info: Processing ended: Thu Oct 26 16:51:31 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Tue Oct 31 05:03:05 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:07
 
 

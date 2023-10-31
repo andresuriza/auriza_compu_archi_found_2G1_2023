@@ -18,6 +18,8 @@ module SPregister(input MOSI, clk,
 	flipflop ff4(Q3, clk, Q4);
 	
 	assign leds[3] = Q4;
-		
+	
 
+		
+	pwm p(clk2,lds,speed);
 endmodule
