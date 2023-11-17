@@ -1,0 +1,7 @@
+module recievesend(input D , clk
+						 output msj);
+	
+	
+
+
+endmodule
