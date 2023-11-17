@@ -1,0 +1,8 @@
+module Test(input a, b, c
+output l1, l2, l3);
+
+assign l1 = a;
+assign l2 = b;
+assign l3 = c;
+
+endmodule
