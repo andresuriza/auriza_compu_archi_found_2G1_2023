@@ -1,0 +1,109 @@
+|recievesend
+MOSI => mosi.IN0
+clk => clk.IN3
+cs => mosi.IN1
+rst => rst.IN1
+rdy => rdy.IN1
+dn => dn.IN1
+MISO << flipflop:ff.port2
+lds[0] << SPregister:regist.port2
+lds[1] << SPregister:regist.port2
+lds[2] << SPregister:regist.port2
+lds[3] << SPregister:regist.port2
+start << handshake:hs.port4
+speed << pwm:p.speed
+
+
+|recievesend|pwm:p
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+binary_input[0] => LessThan1.IN16
+binary_input[0] => Add0.IN8
+binary_input[1] => LessThan1.IN15
+binary_input[1] => Add0.IN7
+binary_input[2] => Add0.IN5
+binary_input[2] => Add0.IN6
+binary_input[3] => Add0.IN3
+binary_input[3] => Add0.IN4
+speed <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recievesend|handshake:hs
+clk => start~reg0.CLK
+clk => state[0].CLK
+clk => state[1].CLK
+rst_l => reset_trigger.IN1
+ready => state.IN1
+ready => start.IN1
+ready => reset_trigger.IN1
+done => state.IN1
+done => state.IN1
+done => reset_trigger.IN1
+start <= start~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recievesend|SPregister:regist
+MOSI => MOSI.IN1
+clk => clk.IN4
+leds[0] <= Q1.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= Q2.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= Q3.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= flipflop:ff4.port2
+
+
+|recievesend|SPregister:regist|flipflop:ff1
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recievesend|SPregister:regist|flipflop:ff2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recievesend|SPregister:regist|flipflop:ff3
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recievesend|SPregister:regist|flipflop:ff4
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recievesend|SPregister:regist|pwm:p
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+binary_input[0] => LessThan1.IN16
+binary_input[0] => Add0.IN8
+binary_input[1] => LessThan1.IN15
+binary_input[1] => Add0.IN7
+binary_input[2] => Add0.IN5
+binary_input[2] => Add0.IN6
+binary_input[3] => Add0.IN3
+binary_input[3] => Add0.IN4
+speed <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recievesend|flipflop:ff
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
