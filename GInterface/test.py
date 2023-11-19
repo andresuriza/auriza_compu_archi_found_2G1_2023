@@ -1,5 +1,6 @@
-def test(x):
+def uniciclo(x):
     print(f"Has seleccionado el procesador: {x}")
+    return 25
 
 
 def test2(x):
@@ -12,4 +13,4 @@ def resultTest(x):
     elif a > 30:
         return 23
     elif a > 50:
-        return 230
+        return 230, 10

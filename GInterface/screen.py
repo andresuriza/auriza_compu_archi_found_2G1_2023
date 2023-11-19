@@ -1,5 +1,5 @@
 import tkinter as tk
-from test import test
+from test import *
 from imageSection import agregar_componentes_visualizacion
 from dataSection import *
 from selectionSection import *

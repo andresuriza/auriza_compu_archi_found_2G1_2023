@@ -1,4 +1,5 @@
 import tkinter as tk
+from dataSection import *
 from test import *
 
 
@@ -11,7 +12,7 @@ def agregar_componentes_seleccion(frame):
                     font=("Arial", 18, "bold"), bg="lightblue")
     text.grid(row=0, column=0, padx=10, pady=10)
 
-    opcionesP = ["Procesador", "Uniciclo", "Multiciclo", "Segmentado R-> S",
+    opcionesP = ["Uniciclo", "Multiciclo", "Segmentado R-> S",
                  "Segmentado UR-> L "]  # Lista de opciones
     seleccion = tk.StringVar()  # Variable para almacenar la opción seleccionada
     seleccion.set(opcionesP[0])
@@ -20,7 +21,7 @@ def agregar_componentes_seleccion(frame):
     select.grid(row=0, column=1, padx=10, pady=10)
 
     boton_llamar = tk.Button(
-        frame, text="Enviar", command=lambda: test(seleccion.get()))
+        frame, text="Enviar", command=lambda: enviar_dato(seleccion.get()))
     boton_llamar.grid(row=0, column=3, padx=10, pady=10)
 # ------------------------------------------------------------------------------------------------------------------------------------------------
     text = tk.Label(frame, text="Modo de funcionamiento temporal",
