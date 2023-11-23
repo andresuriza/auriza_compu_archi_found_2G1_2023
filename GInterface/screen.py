@@ -3,6 +3,8 @@ from test import *
 from imageSection import agregar_componentes_visualizacion
 from dataSection import *
 from selectionSection import *
+
+
 # Crear la ventana principal
 ventana = tk.Tk()
 ventana.title("Simulator Control")  # Título de la ventana
@@ -14,7 +16,7 @@ frame_seleccion.pack(side=tk.TOP, fill=tk.X)
 frame_datos = tk.Frame(ventana, bg="azure3", padx=100)
 frame_datos.pack(side=tk.RIGHT, fill=tk.Y, expand=True)
 
-frame_visualizacion = tk.Frame(ventana, bg="white", padx=300, pady=250)
+frame_visualizacion = tk.Frame(ventana, bg="white", padx=10, pady=10)
 frame_visualizacion.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
 # Agregar componentes a los frames
