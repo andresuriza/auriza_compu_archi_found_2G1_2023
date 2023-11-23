@@ -5,14 +5,21 @@ cicloT = None
 tiempoET = None
 pCT = None
 registrosT = None
+imagePath = None
 
 
 def enviar_dato(valorSel):
-    global cicloT, tiempoET, pCT, registrosT
+    global cicloT, tiempoET, pCT, registrosT, imagePath
 
     if valorSel == "Uniciclo":
-
+        imagePath = "images/uniciclo.PNG"
         cicloT.config(text=f"El resultado es: {uniciclo(valorSel)}")
+    elif valorSel == "Multiciclo":
+        imagePath = "images/iniciclo.PNG"
+    elif valorSel == "Segmentado R-> S":
+        imagePath = "images/Stalls.PNG"
+    else:
+        imagePath = "images/adely.PNG"
 
 
 def agregar_componentes_datos(frame):
