@@ -1,73 +1,67 @@
 
-
 x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16, x17, x18, x19, x20, x21, x22, x23, x24, x25, x26, x27, x28, x29, x30, x31 = range(32)
-memoria = [0] * 1024
+n = 10
 
-# Función que simula la instrucción li
-def li(registro, valor):
-    # Verificar que el registro sea un número válido
-    if not isinstance(registro, int) or registro < 0 or registro > 31:
-        raise ValueError("El registro debe ser un número entero entre 0 y 31")
+def lw(reg, mem):
+    return mem[reg]
 
-    # Verificar que el valor sea un número entero
-    if not isinstance(valor, int):
-        raise ValueError("El valor debe ser un número entero")
 
-    # Verificar que el valor sea un número de 32 bits
-    if valor < -(2**31) or valor >= 2**31:
-        raise ValueError("El valor debe ser un número de 32 bits con signo")
+def addi(reg, value):
+    reg += value
+    return reg
 
-    # Simular la carga del valor inmediato en el registro
-    print(f"li x{registro}, {valor}")
 
-def addi(registro_destino, registro_fuente, valor_inmediato):
-    # Verificar que los registros sean números válidos
-    if not isinstance(registro_destino, int) or not isinstance(registro_fuente, int) or registro_destino < 0 or registro_destino > 31 or registro_fuente < 0 or registro_fuente > 31:
-        raise ValueError("Los registros deben ser números enteros entre 0 y 31")
+def sub(reg1, reg2):
+    reg1 - reg2
+    return reg1
 
-    # Verificar que el valor inmediato sea un número entero de 32 bits
-    if not isinstance(valor_inmediato, int) or valor_inmediato < -(2**11) or valor_inmediato >= 2**11:
-        raise ValueError("El valor inmediato debe ser un número de 32 bits con signo")
 
-    # Simular la ejecución de la instrucción addi
-    resultado = registro_fuente + valor_inmediato
-    print(f"addi x{registro_destino}, x{registro_fuente}, {valor_inmediato}  # x{registro_destino} = x{registro_fuente} + {valor_inmediato} = {resultado}")
+def rem(reg1, reg2):
+    reg1 % reg2
+    return reg1
 
-def beq(registro1, registro2, offset):
-    global direccion_salto
 
-    # Verificar que los registros sean números válidos
-    if not isinstance(registro1, int) or not isinstance(registro2, int) or registro1 < 0 or registro1 > 31 or registro2 < 0 or registro2 > 31:
-        raise ValueError("Los registros deben ser números enteros entre 0 y 31")
+def main():
+    global x1, x2, x3, x4, x5, x6, x7, x8, n
+    x1 = 2
+    x2 = 1
+    x3 = 0
+    x8 = 2
+    x7 = lw(x7, [n-1])
+    x7 = addi(x7, 1)
+    x4 = sub(x3, x2)
 
-    # Simular la comparación de registros
-    son_iguales = registro1 == registro2
-
-    # Si los registros son iguales, realizar el salto condicional
-    if son_iguales:
-        direccion_salto += offset
-        print(f"beq x{registro1}, x{registro2}, {direccion_salto}  # Saltar a la dirección {direccion_salto} si x{registro1} == x{registro2}")
+def criba():
+    if x3 == x7:
+        return
     else:
-        print(f"beq x{registro1}, x{registro2}, {direccion_salto}  # No saltar, ya que x{registro1} != x{registro2}")
+        esPrimo()
 
-def rem(registro_destino, registro1, registro2):
-    # Verificar que los registros sean números válidos
-    if not isinstance(registro_destino, int) or not isinstance(registro1, int) or not isinstance(registro2, int) or registro_destino < 0 or registro_destino > 31 or registro1 < 0 or registro1 > 31 or registro2 < 0 or registro2 > 31:
-        raise ValueError("Los registros deben ser números enteros entre 0 y 31")
+def esPrimo():
+    global x1, x2, x3, x4, x5, x6, x7, x8, n
+    if x3 == x0 or x3 == x2:
+        NoEsPrimo()
+    if x3 == x8 or x1 == x4:
+        SiEsPrimo()
 
-    # Realizar la operación de residuo de la división
-    resultado = registro1 % registro2
+    x5 = rem(x3, x1)
 
-    # Simular la ejecución de la instrucción rem
-    print(f"rem x{registro_destino}, x{registro1}, x{registro2}  # x{registro_destino} = x{registro1} % x{registro2} = {resultado}")
+    if x5 == x0:
+        NoEsPrimo()
+    x1 = addi(x1,1)
+    esPrimo()
 
-def sub(registro_destino, registro_fuente1, registro_fuente2):
-    # Verificar que los registros sean números válidos
-    if not isinstance(registro_destino, int) or not isinstance(registro_fuente1, int) or not isinstance(registro_fuente2, int) or registro_destino < 0 or registro_destino > 31 or registro_fuente1 < 0 or registro_fuente1 > 31 or registro_fuente2 < 0 or registro_fuente2 > 31:
-        raise ValueError("Los registros deben ser números enteros entre 0 y 31")
+def NoEsPrimo():
+    global x1, x3, x4, x2
+    x1 = 2
+    x3 = addi(x3,1)
+    x4 = sub(x3, x2)
+    criba()
 
-    # Realizar la operación de resta
-    resultado = registro_fuente1 - registro_fuente2
 
-    # Simular la ejecución de la instrucción sub
-    print(f"sub x{registro_destino}, x{registro_fuente1}, x{registro_fuente2}  # x{registro_destino} = x{registro_fuente1} - x{registro_fuente2} = {resultado}")
+def SiEsPrimo():
+    print(x3 + " es primo")
+    NoEsPrimo()
+
+main()
+criba()
